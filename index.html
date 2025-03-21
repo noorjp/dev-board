@@ -16,7 +16,7 @@
             </div>
             <div class="flex items-center space-x-3">
                 <img class="w-5" src="assets/checkbox.png" alt="">
-                <p class="font-bold">23</p>
+                <p id="CompletedTaskAssigned" class="font-bold">23</p>
                 <button id="theme-btn"><img class="w-5" src="assets/theme-btn.png" alt=""></button>
             </div>
         </div>
@@ -30,18 +30,18 @@
                     <img class="w-5" src="assets/checkbox.png" alt="">
                     <div>
                         <p class="text-sm text-gray-600">Task Assigned</p>
-                        <p class="text-xl font-bold">05</p>
+                        <p id="taskAssigned" class="text-xl font-bold">06</p>
                     </div>
                 </div>
                 <div class="col-span-2 justify-start bg-gradient-to-r from-[#3752FD] via-[#6C7FFA] to-[#9BA8F8] p-4 rounded-xl shadow text-white flex items-center gap-4 ml-2 ">
                     <img class="w-12" src="assets/board.png" alt="">
-                    <p class="text-lg font-medium">Discover Something<br>New Today!</p>
+                   <a href="blog.html"><p class="text-lg font-medium">Discover Something<br>New Today!</p></a>
                 </div>
                 <div class="bg-[#F4F7FF] p-4 rounded-xl shadow flex justify-center items-center gap-3">
                     <img class="w-5 bg-[#FFFFFF] rounded-full" src="assets/calender.png" alt="">
                     <div>
-                        <p class="text-sm text-gray-600">Wed ,</p>
-                        <p class="text-xl font-bold">Jul 28 2025 </p>
+                        <p id="day" class="text-sm text-gray-600">Wed ,</p>
+                        <p id="date" class="text-xl font-bold">Jul 28 2025 </p>
                     </div>
                 </div>
             </div>
@@ -131,9 +131,9 @@
             </div>
         </div>
         
-        <aside class="bg-white  p-6 rounded-lg shadow-md">
+        <aside  id="activity-log" class="bg-white  p-6 rounded-lg shadow-md">
             <h2 class="text-xl font-bold mb-4">Activity Log</h2>
-            <button class="btn bg-[#3752FD] text-white w-full mb-4">Clear History</button>
+            <button id="clearAlldata" class="btn bg-[#3752FD] text-white w-full mb-4">Clear History</button>
             <div class="space-y-2 text-sm bg-[#F4F7FF] rounded-lg p-3 text-gray-600 mb-2">
                 <p>You have Complete The Task Add Dark Mode at 12:48:15 PM</p>
             </div>
@@ -144,5 +144,7 @@
         </aside>
     </main>
     <script src="scripts/theme.js"></script>
+    <script src="scripts/main.js"></script>
+    <script src="scripts/date.js"></script>
 </body>
 </html>
